@@ -1,0 +1,3 @@
+# web_design1
+1st website made months' ago...
+![How it looked like...](https://github.com/sumibhatta/web_design1/blob/master/Screenshot_2020-06-02%20Invits.jpg)

@@ -1,0 +1,494 @@
+         /* Initilization */
+         
+         * {
+             margin: 0;
+             padding: 0;
+             box-sizing: border-box;
+             font-family: 'Montserrat', sans-serif;
+         }
+         /* Header with Nav */
+         
+         .navbar {
+             height: 90px;
+             width: 100%;
+             background-color: white;
+             position: relative;
+         }
+         
+         .navbar>.nav-header {
+             display: inline;
+         }
+         
+         .navbar>.nav-header>.nav-title {
+             display: inline;
+         }
+         
+         .navbar>.nav-header>.nav-title>a>img {
+             margin: 30px 0px 0px 230px;
+         }
+         
+         .navbar>.nav-btn,
+         #check-me {
+             display: none;
+         }
+         
+         .navbar>.nav-list {
+             display: inline;
+         }
+         
+         .navbar>.nav-list>ul {
+             display: flex;
+             float: right;
+             margin: 5px 100px 0px 0px;
+         }
+         
+         .navbar>.nav-list>ul>li {
+             list-style: none;
+         }
+         
+         .navbar>.nav-list>ul>li>a {
+             display: inline-block;
+             padding: 13px 10px;
+             text-decoration: none;
+             color: #4f5f77;
+             font-weight: bold;
+             margin-top: 20px;
+         }
+         
+         .navbar>.nav-list>ul>li>a:hover {
+             color: red;
+             font-weight: bold;
+         }
+         
+         .nav-list1 li {
+             display: block;
+             padding: 12px 0px;
+             border-bottom: 1px solid black;
+         }
+         /* for Desktop */
+         
+         @media (max-width:1028px) {
+             #fake {
+                 display: none;
+                 position: absolute;
+                 z-index: 100;
+                 background-color: rosybrown;
+                 top: 60px;
+                 left: 0px;
+                 width: 100vw;
+                 height: 100vh;
+                 text-align: center;
+             }
+             .navbar>.nav-btn {
+                 display: inline-block;
+                 position: absolute;
+                 right: 0px;
+                 top: 0px;
+             }
+             .navbar>.nav-btn {
+                 display: inline-block;
+                 width: 50px;
+                 height: 50px;
+                 padding: 13px;
+             }
+             .navbar>.nav-btn>div {
+                 display: block;
+                 width: 25px;
+                 height: 10px;
+                 border-top: 4px solid #000;
+             }
+             .navbar>.nav-list {
+                 position: absolute;
+                 display: block;
+                 width: 100%;
+                 background-color: #333;
+                 height: 0px;
+                 transition: all 0.3s ease-in;
+                 overflow-y: hidden;
+                 top: 50px;
+                 left: 0px;
+             }
+             .navbar>.nav-list>a {
+                 display: block;
+                 width: 100%;
+             }
+         }
+         /* Header with Nav ENds */
+         /* -------
+          Section 
+          ---------*/
+         
+         section {
+             position: relative;
+         }
+         
+         section .liason {
+             position: absolute;
+             top: 50%;
+             left: 35%;
+             transform: translate(-50%, -50%);
+         }
+         
+         section .liason>.outer-circle {
+             position: relative;
+             background-color: rgba(108, 34, 123, 0.9);
+             height: 7.0625rem;
+             width: 7.0625rem;
+             border-radius: 50%;
+         }
+         
+         section .liason>.outer-circle>.inner-circle {
+             position: absolute;
+             align-items: center;
+             background-color: rgba(0, 0, 0, 0);
+             top: 4%;
+             left: 4%;
+             width: 90%;
+             height: 90%;
+             position: relative;
+             border: 0.5px dashed white;
+             border-radius: 50%;
+         }
+         
+         section>img {
+             width: 100%;
+         }
+         /* -----------
+          Horizontal Line with Date
+          -------------- */
+         
+         section .liason>.outer-circle>.inner-circle>.text>.text-one {
+             width: 60%;
+             text-align: center;
+             border-bottom: 0.5px solid #fff;
+             line-height: 0.1px;
+             margin: 25px 0px 0px 20px;
+             font-weight: 800;
+         }
+         
+         .text-one>span {
+             background: rgba(108, 34, 123, 0.95);
+             padding: 2px;
+             font-size: 1.25vw;
+             color: white;
+         }
+         /*-------------
+           Horizontal Line with Date Ends
+           --------------*/
+         /*--------------
+           julia & jakson 
+           ---------------*/
+         
+         .text>h6 {
+             font-family: 'Playfair Display', serif;
+             color: white;
+             margin: 15px 0px 0px 8px;
+         }
+         /* ---------
+          We are getting Married
+          ------------- */
+         
+         .text>p {
+             color: white;
+             font-size: 5px;
+             margin: 10px 0px 0px 18px;
+             font-weight: 600;
+         }
+         /*----------
+           Circles
+           Breakpoint for desktop
+           ------------ */
+         
+         @media (min-width: 600px) {
+             section .liason>.outer-circle {
+                 height: 20rem;
+                 width: 20rem;
+             }
+             section .liason>.outer-circle>.inner-circle {
+                 top: 5%;
+                 left: 5%;
+             }
+             section .liason>.outer-circle>.inner-circle>.text>.text-one {
+                 font-size: 9vw;
+                 margin: 55px 0px 0px 60px;
+             }
+             .text>h6 {
+                 font-size: 30px;
+                 margin: 25px 0px 0px 56px;
+             }
+             .text>p {
+                 font-size: 9px;
+                 margin: 20px 0px 0px 80px;
+             }
+         }
+         /*----------
+         Restoration for other sections
+         ------------*/
+         
+         story,
+         location,
+         gallary,
+         pages,
+         contact {
+             display: block;
+             margin: 40px 0px 0px 0px;
+         }
+         
+         story>span,
+         location>span,
+         gallary>span,
+         pages>span,
+         contact>span {
+             display: inline-block;
+             border: 1px solid black;
+             width: 20px;
+             margin-bottom: 5px;
+         }
+         
+         story>p,
+         location>p,
+         gallary>p,
+         pages>p,
+         contact>p {
+             display: contents;
+         }
+         
+         location {
+             background-color: thistle;
+         }
+         
+         pages {
+             background-color: thistle;
+             padding-top: 10px;
+         }
+         /*----------
+         Restoration for other sections ends
+         ------------*/
+         /* Story Starts*/
+         
+         story>h1 {
+             color: rgba(108, 34, 123, 0.999);
+         }
+         
+         story>.image1,
+         story>.discription {
+             width: 49%;
+             background-color: white;
+             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+             margin-bottom: 25px;
+             float: left;
+         }
+         
+         story>.image1 {
+             margin-left: 8px;
+         }
+         
+         story>.discription {
+             margin-left: 5px;
+             padding: 15px;
+         }
+         /* Story Ends */
+         /* Location Starts */
+         
+         location h1 {
+             color: rgba(108, 34, 123, 0.999);
+         }
+         
+         .item {
+             display: flex;
+             max-width: 1000px;
+             margin: 0 auto;
+         }
+         
+         .imagee {
+             padding: 1em 2em;
+         }
+         
+         .imagee.div {
+             position: relative;
+             text-align: center;
+             font-size: 0.8em;
+         }
+         
+         .imagee.div::after {
+             content: '';
+             width: 100%;
+             height: 0;
+             border-bottom: 1px solid rgba(108, 34, 123, 0.999);
+             position: absolute;
+             top: 2.75em;
+             left: 2.5em;
+             z-index: -1;
+         }
+         
+         .loc,
+         .phone,
+         .web,
+         .mail {
+             position: relative;
+             flex-grow: 1;
+             border: 1px solid rgba(108, 34, 123, 0.999);
+             border-radius: 0.5em;
+             padding: 1.5em;
+             margin: 1em 0;
+         }
+         /* Location Ends */
+         /* Gallary Starts */
+         
+         gallary h1 {
+             color: #673ab7;
+         }
+         
+         .row1,
+         .row2 {
+             padding: .5vw;
+             font-size: 0;
+             flex-flow: row wrap;
+             display: flex;
+         }
+         
+         .row1 .column,
+         .row2 .column {
+             flex: auto;
+             width: 200px;
+             margin: .5vw;
+         }
+         
+         .row1 .column img,
+         .row2 .column img {
+             width: 100%;
+             height: auto;
+         }
+         
+         @media screen and (max-width: 400px) {
+             .row1 .column,
+             .row2 .column {
+                 margin: 0;
+             }
+             .row1,
+             .row2 {
+                 padding: 0;
+             }
+         }
+         /* Gallary ends */
+         /* Pages */
+         
+         pages h1 {
+             color: #673ab7;
+         }
+         
+         .wrapper {
+             display: flex;
+             justify-content: center;
+             flex-wrap: wrap;
+         }
+         
+         .card {
+             max-width: 300px;
+             min-height: 250px;
+             background: #ffffff;
+             padding: 30px;
+             box-sizing: border-box;
+             color: rgba(108, 34, 123, 0.999);
+             margin: 20px;
+             box-shadow: 0px 2px 18px -4px rgba(0, 0, 0, 0.75);
+         }
+         
+         .card-title {
+             margin: 0px 0px 20px 0px;
+             font-size: 16px;
+             font-weight: 600;
+             letter-spacing: 1.2px;
+             background-color: thistle;
+             padding: 5px;
+             text-align: center;
+             border-radius: 10px;
+         }
+         
+         .card-content {
+             font-size: 14px;
+             letter-spacing: 0.5px;
+             line-height: 1.5;
+         }
+         
+         .card-btn {
+             all: unset;
+             display: block;
+             margin-left: auto;
+             border: 2px solid #FFF;
+             padding: 10px 15px;
+             border-radius: 25px;
+             font-size: 10px;
+             font-weight: 600;
+             transition: all 0.5s;
+             cursor: pointer;
+             letter-spacing: 1.2px;
+         }
+         
+         .card-btn:hover {
+             color: pink;
+             background: #FFF;
+         }
+         
+         .card:nth-child(2) .card-btn:hover {
+             color: pink;
+             background: #FFF;
+         }
+         
+         .card:last-child .card-btn:hover {
+             color: #673ab7;
+             background: #FFF;
+         }
+         /* Pages ends */
+         /* Contact Starts */
+         
+         contact .container {
+             border: 2px solid #673ab7;
+             border-radius: 10px;
+             margin: 25px 5% 0px 3%;
+             padding: 40px;
+         }
+         
+         contact h1 {
+             color: #673ab7;
+         }
+         
+         #contact input[type="text"],
+         #contact input[type="email"],
+         #contact input[type="tel"],
+         #contact input[type="url"],
+         #contact textarea {
+             width: 600px;
+             border: 1px solid #cccccc;
+             background: #ffffff;
+             margin: 0 0 10px;
+             padding: 15px;
+         }
+         
+         #contact textarea {
+             height: 100px;
+             max-width: 100%;
+         }
+         
+         #contact button[type="submit"] {
+             display: block;
+             cursor: pointer;
+             width: 20%;
+             border: none;
+             background: #673ab7;
+             color: #FFF;
+             margin: 10px 0 5px 0px;
+             padding: 10px;
+             font-size: 15px;
+             border-radius: 10px;
+         }
+         /* Contact Ends */
+         /* footer Starts */
+         
+         footer {
+             margin-top: 50px;
+             width: 100%;
+             height: 50px;
+             background-color: thistle;
+         }
+         /* Footer ends */
